@@ -28,9 +28,9 @@ const OtherPost = () => {
     },
   ];
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 w-full">
       <h1 className=" text-[20px] text-[#555]">Other post you may like</h1>
-      <div className="flex flex-col gap-8">
+      <div className="grid grid-cols-2 gap-5 md:flex md:flex-col">
         {posts.map((item) => (
           <div key={item.id} className="flex flex-col gap-1">
             <div className="relative">

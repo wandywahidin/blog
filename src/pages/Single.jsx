@@ -4,15 +4,15 @@ import OtherPost from "../components/OtherPost";
 
 const Single = () => {
   return (
-    <div className="flex gap-20 justify-between mt-10">
-      <div className="w-[70%] flex flex-col gap-8">
+    <div className="flex md:flex-row flex-col gap-20 justify-between mt-10">
+      <div className="md:w-[70%] flex flex-col mx-4 md:mx-0 gap-8">
         <div className="relative my-4">
           <img
             src="https://images.pexels.com/photos/4230630/pexels-photo-4230630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="s1"
             className="w-full h-[400px] object-cover rounded-xl"
           />
-          <div className=" w-full  h-full absolute top-4 left-6  bg-lightGreen shadow -z-10 rounded-xl"></div>
+          <div className=" w-full  h-full absolute md:top-4 top-2 md:left-6 left-2 bg-lightGreen shadow -z-10 rounded-xl"></div>
         </div>
         <div className="flex gap-4 items-center">
           <img
@@ -88,7 +88,7 @@ const Single = () => {
           </p>
         </div>
       </div>
-      <div className="w-[30%] my-4">
+      <div className="md:w-[30%] mx-4 md:mx-0 my-4">
         <OtherPost/>
       </div>
     </div>

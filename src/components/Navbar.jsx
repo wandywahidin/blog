@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const buttonTogle = () => {
     settogle(!togle);
-    console.log('togle', togle)
+    console.log("togle", togle);
   };
 
   return (
@@ -16,7 +16,10 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-2/3" />
       </Link>
       {togle ? (
-        <div className="flex items-end z-10 flex-col absolute top-0 pt-6 min-h-screen right-0 bg-yellowGood" onClick={buttonTogle}>
+        <div
+          className="flex items-end z-10 flex-col absolute top-0 pt-6 min-h-screen right-0 bg-teal-200"
+          onClick={buttonTogle}
+        >
           <div className="md:hidden mx-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +65,18 @@ const Navbar = () => {
             >
               <h6>FOOD</h6>
             </Link>
+          </div>
+          <div className=" absolute bottom-3 right-3 flex flex-col">
+            <Link to="/profile" className=" text-base font-semibold">
+              <h6>Wandy</h6>
+            </Link>
+            <Link
+              to="/write"
+              className=" text-base font-semibold px-2 py-1 bg-lightGreen rounded-xl border-white text-white flex items-center justify-center hover:text-lightGreen hover:bg-white border hover:border-lightGreen"
+            >
+              <h6>Write</h6>
+            </Link>
+            <h6 className="text-base font-semibold">Logout</h6>
           </div>
         </div>
       ) : (
